@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Rami Ashtar</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+		<script>
+			(function() {
+				emailjs.init('user_DuZ5hhOnpGc19exjsijV4');
+			})();
+		</script>
+		<script type="text/javascript">
+			window.onload = function() {
+				document.getElementById('contact-form').addEventListener('submit', function(event) {
+					event.preventDefault();
+					// these IDs from the previous steps
+					emailjs.sendForm('service_2ofpvxl','template_m38943d', this)
+						.then(function() {
+							console.log('SUCCESS!');
+						}, function(error) {
+							console.log('FAILED...', error);
+						});
+				});
+			}
+		</script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#one">About Me</a></li>
+							<li><a href="#two">What I do</a></li>
+							<li><a href="#three">Get in touch</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>Rami Ashtar</h1>
+							<p>Web Developer & Designer</p>
+							<ul class="actions">
+								<li><a href="#one" class="button scrolly">Learn more</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a href="#" class="image"><img src="images/pic01.svg" style="height: 150px; width: 150px;" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Education</h2>
+									<p>I've completed both my Masters of Engineering and Bachelors of Applied Science in Computer Engineering at the University of Toronto.</p>
+									<ul class="actions">
+										<li><a href="education.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/pic02.svg" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Experience</h2>
+									<p>I'm currently a Front-End consultant at Scotiabank. I have 6+ years experience working in the FinTech industry using Angular, React, Java and Spring.</p>
+									<ul class="actions">
+										<li><a href="experience.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/pic03.svg" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Services</h2>
+									<p>I specialize in web design, software development, mobile design and branding for any of your technology solutions. I write fully responsive, clean, secure code and provide customer support to help maintain your product.</p>
+									<ul class="actions">
+										<li><a href="#two" class="button scrolly">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>What I do</h2>
+							<p></p>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-code"></span>
+									<h3>Web Design</h3>
+									<p>I design and develop applications for the web. This includes anything from personal and business websites, to online multi-functional platforms.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-lock"></span>
+									<h3>Secure Code</h3>
+									<p>I always prioritize quality security and clean code. It is important to use the latest web security standards to safeguard your and your customers' data.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-cog"></span>
+									<h3>Software Development</h3>
+									<p>I specialize in software development on multiple platforms. This includes web, mobile and OS based (Windows/Mac/Linux), database systems and backend systems.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-desktop"></span>
+									<h3>Branding</h3>
+									<p>Your product needs a brand to make it stand out from all its online and offline competitors. I can help you come up with a brand and a marketing strategy for your product.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-link"></span>
+									<h3>Fully Responsive</h3>
+									<p>All my web applications are fully responsive. This means that the user will have a tailored experience depending on the screen size of their device. Try accessing my website on your phone!</p>
+								</section>
+								<section>
+									<span class="icon major fa-gem"></span>
+									<h3>Customer Support</h3>
+									<p>I provide customer support to all my clients and their products, including after the product is live and delivered.</p>
+								</section>
+							</div>
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p>If you would like to collaborate on a project together, or have any inquiries, do not hesitate to contact me using the form below. I can also be reached at the contact details listed.</p>
+							<div class="split style1">
+								<section>
+									<form id="contact-form">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<input type="submit" value="Send Message">
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											Based in Toronto, ON<br />
+											Canada</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="#">contact@ramiashtar.com</a>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="https://www.twitter.com/ramiashtar" target="_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="https://www.github.com/rashtar" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="https://www.linkedin.com/in/rashtar/" target="_blank"_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; RamiAshtar.com All rights reserved.</li>
+						<li><a href="https://storyset.com/business">Business illustrations by Storyset</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
